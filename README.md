@@ -5,7 +5,7 @@
 
 This is a [JHipster](http://jhipster.github.io/) module, that is meant to be used in a JHipster application.
 
-This module will add a [bootswatch](https://bootswatch.com/) theme switcher to your application
+This module will add a [bootswatch](https://bootswatch.com/) theme switcher to your application footer
 
 ![Screenshot 1](http://jhipster.github.io/images/009_tips_using_bootswatch_themes_03.png)
 
