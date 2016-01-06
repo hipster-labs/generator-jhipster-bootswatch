@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-bootswatch",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A jhipster mdoule to enable bootswatch theme switcher to generated application",
   "homepage": "https://github.com/deepu105/generator-jhipster-bootswatch",
   "author": {
@@ -20,7 +20,7 @@
     "chalk": "^1.0.0",
     "cheerio": "^0.19.0",
     "generator-jhipster": ">=2.26.2",
-    "yeoman-generator": "^0.21.1"
+    "yeoman-generator": "0.22.2"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
