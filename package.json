@@ -14,7 +14,12 @@
   "main": "generators/app/index.js",
   "keywords": [
     "yeoman-generator",
-    "jhipster-module"
+    "jhipster-module",
+    "theme",
+    "bootswatch",
+    "bootstrap",
+    "theme switcher",
+    "jhipster"
   ],
   "dependencies": {
     "chalk": "^1.0.0",
