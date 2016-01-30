@@ -1,5 +1,5 @@
 # generator-jhipster-bootswatch [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> A jhipster mdoule to enable bootswatch theme switcher to generated application
+> A jhipster module to enable bootswatch theme switcher to generated application
 
 ## Usage
 
