@@ -2,7 +2,7 @@
   "name": "generator-jhipster-bootswatch",
   "version": "0.2.2",
   "description": "A jhipster mdoule to enable bootswatch theme switcher to generated application",
-  "homepage": "https://github.com/deepu105/generator-jhipster-bootswatch",
+  "homepage": "https://github.com/hipster-labs/generator-jhipster-bootswatch",
   "author": {
     "name": "Deepu KS",
     "email": "d4udts@gmail.com",
@@ -44,10 +44,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deepu105/generator-jhipster-bootswatch.git"
+    "url": "git+https://github.com/hipster-labs/generator-jhipster-bootswatch.git"
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/deepu105/generator-jhipster-bootswatch/issues"
+    "url": "https://github.com/hipster-labs/generator-jhipster-bootswatch/issues"
   }
 }

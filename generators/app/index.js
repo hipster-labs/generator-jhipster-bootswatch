@@ -65,12 +65,12 @@ module.exports = yeoman.generators.Base.extend({
     writeClientSideFiles : function () {
       // collect files to copy
       var files = [
-        { from: this.webappDir + '/scripts/components/util/bootswatch/_bootswatch.service.js', to: this.webappDir + '/scripts/components/util/bootswatch/bootswatch.service.js'},
-        { from: this.webappDir + '/scripts/components/util/bootswatch/_bootswatch.directive.js', to: this.webappDir + '/scripts/components/util/bootswatch/bootswatch.directive.js'},
-        { from: this.webappDir + '/scripts/components/util/bootswatch/_bootswatch.controller.js', to: this.webappDir + '/scripts/components/util/bootswatch/bootswatch.controller.js'}
+        { from: this.webappDir + '/app/components/util/bootswatch/_bootswatch.service.js', to: this.webappDir + '/app/components/util/bootswatch/bootswatch.service.js'},
+        { from: this.webappDir + '/app/components/util/bootswatch/_bootswatch.directive.js', to: this.webappDir + '/app/components/util/bootswatch/bootswatch.directive.js'},
+        { from: this.webappDir + '/app/components/util/bootswatch/_bootswatch.controller.js', to: this.webappDir + '/app/components/util/bootswatch/bootswatch.controller.js'}
       ];
       if(this.authenticationType == 'oauth2' || jhipsterVar.authenticationType == 'xauth'){
-        files.push({ from: this.webappDir + '/scripts/components/interceptor/_bootswatch.interceptor.js', to: this.webappDir + '/scripts/components/interceptor/bootswatch.interceptor.js'});
+        files.push({ from: this.webappDir + '/app/components/interceptor/_bootswatch.interceptor.js', to: this.webappDir + '/app/components/interceptor/bootswatch.interceptor.js'});
       }
       this.copyFiles(files);
     },
