@@ -82,14 +82,9 @@ module.exports = yeoman.generators.Base.extend({
       jhipsterFunc.addTranslationKeyToAllLanguages('bootswatch', {'themeSelector' : 'Theme'}, 'addGlobalTranslationKey', jhipsterVar.enableTranslation);
       jhipsterFunc.rewriteFile(this.webappDir + '/index.html', '<!-- build:css content/css/main.css -->', '<!-- placeholder link to load bootswatch themes, title holds the current applied theme name-->\n' +
                   '<link rel="stylesheet" href="" id="bootswatch-css" title="Default">\n');
+
       var html = this.fs.read(this.webappDir + '/index.html');
       var $ = cheerio.load(html);
-      /*var head = $('head');
-      if(head.find('#bootswatch-css').length == 0) {
-        head.append('    <!-- placeholder link to load bootswatch themes, title holds the current applied theme name-->\n' +
-                    '        <link rel="stylesheet" href="" id="bootswatch-css" title="Default">\n' +
-                    '    ');
-      }*/
       var footer = $('.footer');
       if(footer.find('#bootswatch-theme-switcher').length == 0){
         footer.append("    <div ng-controller=\"BootswatchController\" id=\"bootswatch-theme-switcher\" uib-dropdown class=\"dropup pull-right\">\n" +
