@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-bootswatch",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "A jhipster mdoule to enable bootswatch theme switcher to generated application",
   "homepage": "https://github.com/hipster-labs/generator-jhipster-bootswatch",
   "author": {
