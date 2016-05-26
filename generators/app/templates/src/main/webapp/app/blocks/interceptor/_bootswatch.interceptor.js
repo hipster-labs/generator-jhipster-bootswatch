@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('<%=angularAppName%>')
-    .factory('BootswatchInterceptor', ['$rootScope', '$q', '$location', '$localStorage', '$sessionStorage', function ($rootScope, $q, $location, $localStorage, $sessionStorage/* localStorageService*/) {
+    .factory('BootswatchInterceptor', ['$rootScope', '$q', '$location', '$localStorage', '$sessionStorage', function ($rootScope, $q, $location, $localStorage, $sessionStorage) {
         return {
             // Add authorization token to headers
             request: function (config) {
