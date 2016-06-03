@@ -86,14 +86,14 @@ module.exports = yeoman.generators.Base.extend({
       var $ = cheerio.load(html);
       var footer = $('.footer');
       if(footer.find('#bootswatch-theme-switcher').length == 0){
-        footer.append("    <div ng-controller=\"BootswatchController\" id=\"bootswatch-theme-switcher\" uib-dropdown class=\"dropup pull-right\">\n" +
+        footer.append("    <div ng-controller=\"BootswatchController as vm\" id=\"bootswatch-theme-switcher\" uib-dropdown class=\"dropup pull-right\">\n" +
                       "                    <a class=\"btn btn-default dropdown-toggle\"  uib-dropdown-toggle>\n" +
                       "                        <span class=\"glyphicon glyphicon-adjust\"></span>\n" +
                       "                        <span class=\"hidden-tablet\" translate=\"bootswatch.themeSelector\">Theme</span>\n" +
                       "                        <b class=\"caret\"></b>\n" +
                       "                    </a>\n" +
                       "                    <ul class=\"dropdown-menu\" role=\"menu\" uib-dropdown-menu>\n" +
-                      "                        <li class=\"theme-link\" ng-repeat=\"theme in themes\">\n" +
+                      "                        <li class=\"theme-link\" ng-repeat=\"theme in vm.themes\">\n" +
                       "                            <a href=\"\" jh-switch-theme=\"theme\">{{theme.name}}</a>\n" +
                       "                        </li>\n" +
                       "                    </ul>\n" +
