@@ -1,12 +1,21 @@
-'use strict';
+(function() {
+    'use strict';
 
-angular.module('<%=angularAppName%>')
-    .factory('BootSwatchService', [ '$http', function ($http) {
+    angular
+        .module('<%=angularAppName%>')
+        .factory('BootSwatchService', BootSwatchService);
+
+    BootSwatchService.$inject = ['$http'];
+
+    function BootSwatchService ($http) {
         return {
-            get: function() {
-                return $http.get('http://bootswatch.com/api/3.json').then(function (response) {
-                    return response.data.themes;
-                });
-            }
+            get: get
         };
-    }]);
+
+        function get() {
+            return $http.get('http://bootswatch.com/api/3.json').then(function (response) {
+                return response.data.themes;
+            });
+        }
+    }
+})();
