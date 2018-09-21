@@ -1,5 +1,8 @@
 # generator-jhipster-bootswatch [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > A jhipster module to enable bootswatch theme switcher to generated application
+#### Notice
+
+Please note that this module only works with AngularJS and hence will not work with JHipster 5+ which supports only Angular and React
 
 ## Usage
 
