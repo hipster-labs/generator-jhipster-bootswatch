@@ -3,7 +3,9 @@
 
 # Notice
 
-**Please note that this module only works with AngularJS and hence will not work with JHipster 5+ which supports only Angular and React**
+## Bootswatch is directly supported by latest versions of JHipster, so please use that instead
+
+**Please note that this module is deprecated and only works with AngularJS and hence will not work with JHipster 5+ which supports only Angular and React**
 
 ## Usage
 
